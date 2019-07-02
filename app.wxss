@@ -10,3 +10,11 @@ image {
   height: 100%;
   display: block;
 }
+.auto {
+  display: flex;
+  flex-direction: row;
+  margin-left: 40%;
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+}

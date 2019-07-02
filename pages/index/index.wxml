@@ -19,7 +19,14 @@
     </view>
     <!-- 按钮区 -->
     <view class="btn">
-    
+      <button class="subbtn" wx:if='{{loginflag}}'>登录</button>
+      <button class="subbtn_abled" wx:else='{{loginflag}}' loading='{{btnloading}}' bindtap='login'>登录</button>
+    </view>
+    <!-- 自动登录勾选区 -->
+    <view class="auto">
+      <image bindtap="isAutologin" src="  /images/appimg/check.png" wx:if='{{auto}}'></image>
+      <image bindtap="isAutologin" src="/images/appimg/nocheck.png" wx:else></image>
+      <label>自动登录</label>
     </view>
   </view>
 
