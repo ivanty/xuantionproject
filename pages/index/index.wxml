@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<image src='../../images/appimg/bg.jpg' class="bd"></image>
+<view class="container">
+  <!-- 这是一个玄讯的标志 -->
+  <view class="logo">
+    <image src="../../images/appimg/logo1.png" class="im1"></image>
+    <image src="../../images/appimg/log2.png" class="im2"></image>
+  </view>
+  <view class="loginipt">
+    <!-- 账号输入区 -->
+    <view class='ipt1'>
+      <image src="../../images/appimg/logperson.png" class="img"></image>
+      <input class="input" placeholder-class="phClass" value="{{account}}" placeholder='请输入帐号' bindinput='accountInput' type="number" disabled='{{updateflag}}'></input>
+    </view>
+    <!-- 密码输入区 -->
+    <view class="ipt2">
+      <image src="../../images/appimg/pwd.png" class="img"></image>
+      <input class="input" placeholder-class="phClass" password='true' value="{{password}}" type="number" placeholder='请输入密码' bindinput='pwdInput' disabled='{{updateflag}}'></input>
+    </view>
+    <!-- 按钮区 -->
+    <view class="btn">
+    
+    </view>
+  </view>
+
+</view>
